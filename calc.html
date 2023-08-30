@@ -1,0 +1,55 @@
+<html>
+<head><title>calc</title>
+<script>
+function add()
+{
+ var num1,num2,sum;
+ num1=parseInt(document.getElementById("firstnum").value);
+ num2=parseInt(document.getElementById("secondnum").value);
+ sum=num1+num2;
+ document.getElementById("answer").value=sum;
+}
+function minus()
+{
+ var num1,num2,dif;
+ num1=parseInt(document.getElementById("firstnum").value);
+ num2=parseInt(document.getElementById("secondnum").value);
+ sum=num1-num2;
+ document.getElementById("answer").value=sum;
+}
+function mul()
+{
+ var num1,num2,pro;
+ num1=parseInt(document.getElementById("firstnum").value);
+ num2=parseInt(document.getElementById("secondnum").value);
+ sum=num1*num2;
+ document.getElementById("answer").value=sum;
+}
+function divi()
+{
+ var num1,num2,quo;
+ num1=parseInt(document.getElementById("firstnum").value);
+ num2=parseInt(document.getElementById("secondnum").value);
+ sum=num1/num2;
+ document.getElementById("answer").value=sum;
+}
+function reset()
+{
+ document.getElementById("firstnum").value="";
+ document.getElementById("secondnum").value="";
+ document.getElementById("answer").value="";
+}
+</script>
+</head>
+<body>
+<p>enter the first number:<input id="firstnum"></p>
+<p>enter the second number:<input id="secondnum"></p>
+<button onclick="add();">+</button>
+<button onclick="minus();">-</button>
+<button onclick="mul();">*</button>
+<button onclick="divi();">/</button>
+<button onclick="reset();">C</button>
+<p>result=<input id="answer"></p>
+</center>
+</body>
+</html>
